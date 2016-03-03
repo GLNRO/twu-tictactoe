@@ -39,9 +39,10 @@ public class GameTest {
     @Test
     public void shouldAskPlayerOneToEnterAMove(){
         when(scanner.nextInt()).thenReturn(0);
-        game.promptPlayer1();
 
-        verify(printStream).println(contains("X|2|3\n-----\n4|5|6\n-----\n7|8|9"));
+        game.promptPlayer();
+
+        verify(board).interpretInput(0,"X");
     }
 
 

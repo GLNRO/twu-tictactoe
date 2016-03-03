@@ -20,8 +20,8 @@ public class Board {
 
     }
 
-    public void interpretInput(int userInput) {
-        board.set(userInput,"X");
+    public void interpretInput(int userInput,String player) {
+        board.set(userInput-1,player);
         print();
     }
 }

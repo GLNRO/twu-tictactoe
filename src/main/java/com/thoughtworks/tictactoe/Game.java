@@ -20,8 +20,8 @@ public class Game {
     }
 
 
-    public void promptPlayer1() {
-        int player1Move = scanner.nextInt();
-        board.interpretInput(player1Move);
+    public void promptPlayer() {
+        int playerMove = scanner.nextInt();
+        board.interpretInput(playerMove,"X");
     }
 }

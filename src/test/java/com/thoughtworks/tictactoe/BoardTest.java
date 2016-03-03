@@ -24,6 +24,10 @@ public class BoardTest {
         board = new Board(printStream);
     }
 
+    public void player1Enters1(){
+        board.interpretInput(1,"X");
+    }
+
     @Test
     public void shouldPrintEmptyBoardWhenGameStarts(){
         board.print();
@@ -31,6 +35,21 @@ public class BoardTest {
         verify(printStream).println(contains("1|2|3\n-----\n4|5|6\n-----\n7|8|9"));
     }
 
+    @Test
+    public void shouldPrintXinSpace1WhenPlayer1Enters1(){
+        player1Enters1();
 
+        verify(printStream).println(contains("X|2|3\n-----\n4|5|6\n-----\n7|8|9"));
+    }
+
+
+
+    @Test
+    public void shouldPrintOinSpace3WhenPlayer2Enters3(){
+        player1Enters1();
+        board.interpretInput(3,"O");
+
+        verify(printStream).println(contains("X|2|O\n-----\n4|5|6\n-----\n7|8|9"));
+    }
 
 }
