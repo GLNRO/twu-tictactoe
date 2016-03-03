@@ -9,26 +9,41 @@ import java.util.List;
 public class Board {
 
     private PrintStream printStream;
-    private List<String> board = new ArrayList<>(Arrays.asList("1","2","3","4","5","6","7","8","9"));
+    private List<String> boardString;
+    private boolean gameOver;
 
-    public Board(PrintStream printStream) {
+    public Board(PrintStream printStream,List<String> boardString) {
+
         this.printStream = printStream;
+        this.gameOver = false;
+        this.boardString = boardString;
     }
 
     public void print() {
-        printStream.println(board.get(0) +"|"+ board.get(1) +"|" + board.get(2) +"\n-----\n"+ board.get(3) +"|"+ board.get(4) +"|" + board.get(5) +"\n-----\n"+ board.get(6) +"|" + board.get(7) + "|" + board.get(8));
+        printStream.println(boardString.get(0) +"|"+ boardString.get(1) +"|" + boardString.get(2) +"\n-----\n"+ boardString.get(3) +"|"+ boardString.get(4) +"|" + boardString.get(5) +"\n-----\n"+ boardString.get(6) +"|" + boardString.get(7) + "|" + boardString.get(8));
 
     }
 
     public void interpretInput(int userInput,String player) {
-        String cellContent = board.get(userInput-1);
+        String cellContent = boardString.get(userInput-1);
 
         if(cellContent.equals("X") || cellContent.equals("O")) {
             printStream.println("Location already taken, please try again");
         }
         else {
-            board.set(userInput - 1, player);
+            boardString.set(userInput - 1, player);
             print();
         }
+    }
+
+    public boolean complete() {
+        boolean completeCells =  true;
+        for(String cell : boardString){
+            if(!cell.equals("X") || !cell.equals("O")){
+                completeCells = false;
+            }
+        }
+
+        return completeCells;
     }
 }

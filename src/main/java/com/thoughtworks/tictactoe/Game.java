@@ -29,4 +29,11 @@ public class Game {
         int playerMove = scanner.nextInt();
         board.interpretInput(playerMove,"O");
     }
+
+
+    public void isOver() {
+        if(board.complete()){
+            printStream.println("Game is over");
+        }
+    }
 }

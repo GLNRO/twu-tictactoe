@@ -50,5 +50,12 @@ public class GameTest {
         verify(board).interpretInput(3,"O");
     }
 
+    @Test
+    public void shouldBeOverWhenBoardIsFull() {
+
+        game.isOver();
+
+        verify(board).complete();
+    }
 
 }

@@ -4,6 +4,9 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.PrintStream;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 import static org.junit.Assert.*;
 import static org.mockito.Matchers.contains;
@@ -21,7 +24,8 @@ public class BoardTest {
     public void setup(){
         printStream = mock(PrintStream.class);
         game = mock(Game.class);
-        board = new Board(printStream);
+        List<String> boardString = new ArrayList<>(Arrays.asList("1","2","3","4","5","6","7","8","9"));
+        board = new Board(printStream, boardString);
     }
 
     public void player1Enters1(){
@@ -59,6 +63,11 @@ public class BoardTest {
         board.interpretInput(1,"O");
 
         verify(printStream).println(contains("Location already taken, please try again"));
+    }
+
+    @Test
+    public void shouldPrintGameOverWhenBoardIsFull(){
+
     }
 
 }
