@@ -21,9 +21,9 @@ public class Board {
     }
 
     public void interpretInput(int userInput,String player) {
-        String b = board.get(userInput);
+        String cellContent = board.get(userInput-1);
 
-        if(player.equals(b)) {
+        if(cellContent.equals("X") || cellContent.equals("O")) {
             printStream.println("Location already taken, please try again");
         }
         else {
