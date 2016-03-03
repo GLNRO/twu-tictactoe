@@ -11,6 +11,10 @@ public class Main {
 
         Game game = new Game(printStream,board,scanner);
         game.start();
-        game.promptPlayer();
+        game.promptPlayer1();
+        game.promptPlayer2();
+        game.promptPlayer1();
+        game.promptPlayer2();
+
     }
 }

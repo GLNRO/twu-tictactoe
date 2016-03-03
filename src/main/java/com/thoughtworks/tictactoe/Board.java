@@ -21,7 +21,14 @@ public class Board {
     }
 
     public void interpretInput(int userInput,String player) {
-        board.set(userInput-1,player);
-        print();
+        String b = board.get(userInput);
+
+        if(player.equals(b)) {
+            printStream.println("Location already taken, please try again");
+        }
+        else {
+            board.set(userInput - 1, player);
+            print();
+        }
     }
 }

@@ -28,6 +28,7 @@ public class BoardTest {
         board.interpretInput(1,"X");
     }
 
+
     @Test
     public void shouldPrintEmptyBoardWhenGameStarts(){
         board.print();
@@ -50,6 +51,14 @@ public class BoardTest {
         board.interpretInput(3,"O");
 
         verify(printStream).println(contains("X|2|O\n-----\n4|5|6\n-----\n7|8|9"));
+    }
+
+    @Test
+    public void shouldPrintLocationIsInvalidWhenPlayerChoosesATakenCell(){
+        player1Enters1();
+        board.interpretInput(1,"O");
+
+        verify(printStream).println(contains("Location already taken, please try again"));
     }
 
 }

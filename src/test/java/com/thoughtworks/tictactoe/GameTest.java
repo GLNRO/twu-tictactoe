@@ -5,8 +5,6 @@ import org.junit.Test;
 
 import java.io.PrintStream;
 
-import static org.junit.Assert.*;
-import static org.mockito.Matchers.contains;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -17,8 +15,6 @@ public class GameTest {
     private  Game game;
     private PrintStream printStream;
     private Board board;
-    private Player player1;
-    private Player player2;
     private UserScanner scanner;
 
     @Before
@@ -38,11 +34,20 @@ public class GameTest {
 
     @Test
     public void shouldAskPlayerOneToEnterAMove(){
-        when(scanner.nextInt()).thenReturn(0);
+        when(scanner.nextInt()).thenReturn(1);
 
-        game.promptPlayer();
+        game.promptPlayer1();
 
-        verify(board).interpretInput(0,"X");
+        verify(board).interpretInput(1,"X");
+    }
+
+    @Test
+    public void shouldAskPlayerTwoToEnterAMove(){
+        when(scanner.nextInt()).thenReturn(3);
+
+        game.promptPlayer2();
+
+        verify(board).interpretInput(3,"O");
     }
 
 
