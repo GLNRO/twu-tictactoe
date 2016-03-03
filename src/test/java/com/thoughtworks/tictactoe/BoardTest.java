@@ -19,13 +19,23 @@ public class BoardTest {
     private PrintStream printStream;
     private Board board;
     private Game game;
+    private Board fullBoard;
 
     @Before
     public void setup(){
         printStream = mock(PrintStream.class);
         game = mock(Game.class);
+        emptyBoard();
+    }
+
+    public void emptyBoard(){
         List<String> boardString = new ArrayList<>(Arrays.asList("1","2","3","4","5","6","7","8","9"));
         board = new Board(printStream, boardString);
+    }
+
+    public void fullBoard(){
+        List<String> fullBoardString = new ArrayList<>(Arrays.asList("X","O","X","X","O","O","X","O","X"));
+        fullBoard = new Board(printStream, fullBoardString);
     }
 
     public void player1Enters1(){
@@ -66,8 +76,11 @@ public class BoardTest {
     }
 
     @Test
-    public void shouldPrintGameOverWhenBoardIsFull(){
-
+    public void shouldEvaluateToTrueWhenBoardIsFull(){
+        fullBoard();
+        boolean comp = fullBoard.complete();
+        assertEquals(true,comp);
     }
+
 
 }

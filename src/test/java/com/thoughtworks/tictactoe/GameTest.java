@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import java.io.PrintStream;
 
+import static org.mockito.Matchers.contains;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -56,6 +57,15 @@ public class GameTest {
         game.isOver();
 
         verify(board).complete();
+    }
+
+    @Test
+    public void shouldPrintGameOverWhenBoardIsFull(){
+        when(board.complete()).thenReturn(true);
+
+        game.isOver();
+
+        verify(printStream).println(contains("Game Over"));
     }
 
 }

@@ -39,7 +39,7 @@ public class Board {
     public boolean complete() {
         boolean completeCells =  true;
         for(String cell : boardString){
-            if(!cell.equals("X") || !cell.equals("O")){
+            if(!(cell.equals("X") || cell.equals("O"))){
                 completeCells = false;
             }
         }
