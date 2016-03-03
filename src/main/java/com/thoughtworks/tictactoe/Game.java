@@ -30,10 +30,17 @@ public class Game {
         board.interpretInput(playerMove,"O");
     }
 
+    public void run(){
+        while(!board.complete()){
+            promptPlayer1();
+            promptPlayer2();
+        }
+        isOver();
+    }
+
 
     public void isOver() {
-        if(board.complete()){
-            printStream.println("Game is over");
-        }
+        printStream.println("Game Is A Draw");
+
     }
 }

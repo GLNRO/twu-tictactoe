@@ -20,6 +20,7 @@ public class BoardTest {
     private Board board;
     private Game game;
     private Board fullBoard;
+    private Board fullColumnBoard;
 
     @Before
     public void setup(){
@@ -40,6 +41,11 @@ public class BoardTest {
 
     public void player1Enters1(){
         board.interpretInput(1,"X");
+    }
+
+    public void fullColumnBoard(){
+        List<String> fullColumnString = new ArrayList<>(Arrays.asList("1","X","O","4","X","O","7","X","9"));
+        fullColumnBoard = new Board(printStream, fullColumnString);
     }
 
 
@@ -79,6 +85,13 @@ public class BoardTest {
     public void shouldEvaluateToTrueWhenBoardIsFull(){
         fullBoard();
         boolean comp = fullBoard.complete();
+        assertEquals(true,comp);
+    }
+
+    @Test
+    public void shouldEvaluateToTrueWhenColumnContainsSamePlayers(){
+        fullColumnBoard();
+        boolean comp = fullColumnBoard.checkColumns();
         assertEquals(true,comp);
     }
 

@@ -36,14 +36,29 @@ public class Board {
         }
     }
 
+
+
     public boolean complete() {
         boolean completeCells =  true;
         for(String cell : boardString){
             if(!(cell.equals("X") || cell.equals("O"))){
                 completeCells = false;
             }
+            else if(!checkColumns()){
+                completeCells = false;
+            }
         }
 
         return completeCells;
+    }
+
+    public boolean checkColumns(){
+        boolean completeColumn = false;
+        for(int i=6;i<9;i++){
+            if(boardString.get(i).equals(boardString.get(i-3)) && boardString.get(i).equals(boardString.get(i-6))){
+                completeColumn = true;
+            }
+        }
+        return completeColumn;
     }
 }

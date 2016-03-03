@@ -14,10 +14,7 @@ public class Main {
         UserScanner scanner = new UserScanner();
         Game game = new Game(printStream,board,scanner);
         game.start();
-        game.promptPlayer1();
-        game.promptPlayer2();
-        game.promptPlayer1();
-        game.promptPlayer2();
+        game.run();
 
     }
 }

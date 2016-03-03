@@ -2,6 +2,7 @@ package com.thoughtworks.tictactoe;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.experimental.theories.suppliers.TestedOn;
 
 import java.io.PrintStream;
 
@@ -51,13 +52,6 @@ public class GameTest {
         verify(board).interpretInput(3,"O");
     }
 
-    @Test
-    public void shouldBeOverWhenBoardIsFull() {
-
-        game.isOver();
-
-        verify(board).complete();
-    }
 
     @Test
     public void shouldPrintGameOverWhenBoardIsFull(){
@@ -65,7 +59,15 @@ public class GameTest {
 
         game.isOver();
 
-        verify(printStream).println(contains("Game Over"));
+        verify(printStream).println(contains("Game Is A Draw"));
     }
+
+//    @Test
+//    public void shouldPromptBothPlayersDuringRunUntilBoardIsFull(){
+//        when(board.complete()).thenReturn(true).thenReturn(false);
+//        game.run();
+//
+//        verify()
+//    }
 
 }
