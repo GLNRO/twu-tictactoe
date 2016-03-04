@@ -52,15 +52,30 @@ public class GameTest {
         verify(board).interpretInput(3,"O");
     }
 
-
     @Test
-    public void shouldPrintGameOverWhenBoardIsFull(){
+    public void shouldEndGameWhenBoardIsComplete(){
         when(board.complete()).thenReturn(true);
 
-        game.isOver();
+        game.run();
 
-        verify(printStream).println(contains("Game Is A Draw"));
+        verify(printStream).println("Game Is Over");
     }
+//
+//    @Test
+//    public void shouldPrintGameOverWhenBoardIsFull(){
+//        when(board.complete()).thenReturn(true);
+//
+//        game.isOver();
+//
+//        verify(printStream).println(contains("Game Is A Draw"));
+//    }
+
+//    @Test
+//    public void shouldPrintGameOverWhenBoardIsFull(){
+//        board.
+//
+//        verify(printStream).println(contains("Game Is A Draw"));
+//    }
 
 //    @Test
 //    public void shouldPromptBothPlayersDuringRunUntilBoardIsFull(){

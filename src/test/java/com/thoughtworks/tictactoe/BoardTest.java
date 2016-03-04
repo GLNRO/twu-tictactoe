@@ -21,6 +21,7 @@ public class BoardTest {
     private Game game;
     private Board fullBoard;
     private Board fullColumnBoard;
+    private Board fullRowBoard;
 
     @Before
     public void setup(){
@@ -47,6 +48,12 @@ public class BoardTest {
         List<String> fullColumnString = new ArrayList<>(Arrays.asList("1","X","O","4","X","O","7","X","9"));
         fullColumnBoard = new Board(printStream, fullColumnString);
     }
+
+    public void fullRowBoard() {
+        List<String> fullColumnString = new ArrayList<>(Arrays.asList("X","X","X","4","O","O","7","8","9"));
+        fullRowBoard = new Board(printStream, fullColumnString);
+    }
+
 
 
     @Test
@@ -81,19 +88,39 @@ public class BoardTest {
         verify(printStream).println(contains("Location already taken, please try again"));
     }
 
+//    @Test
+//    public void shouldEvaluateToTrueWhenBoardIsFull(){
+//        fullBoard();
+//        boolean comp = fullBoard.complete();
+//        assertEquals(true,comp);
+//    }
+
     @Test
-    public void shouldEvaluateToTrueWhenBoardIsFull(){
+    public void shouldPrintDrawWhenBoardIsFull(){
         fullBoard();
-        boolean comp = fullBoard.complete();
-        assertEquals(true,comp);
+        fullBoard.checkForDraw();
+
+        verify(printStream).println(contains("Game Is A Draw"));
+    }
+
+
+    @Test
+    public void shouldEndGameWhenPlayerFillsAColumn(){
+        fullColumnBoard();
+        fullColumnBoard.checkColumns();
+        fullColumnBoard.checkGameStatus();
+
+        verify(printStream).println(contains("Game Over"));
     }
 
     @Test
-    public void shouldEvaluateToTrueWhenColumnContainsSamePlayers(){
-        fullColumnBoard();
-        boolean comp = fullColumnBoard.checkColumns();
-        assertEquals(true,comp);
-    }
+    public void shouldEndGameWhenPlayerFillsARow(){
+        fullRowBoard();
+        fullRowBoard.checkRows();
+        fullRowBoard.checkGameStatus();
 
+        verify(printStream).println(contains("Game Over"));
+    }
+    
 
 }

@@ -40,7 +40,7 @@ public class Game {
 
 
     public void isOver() {
-        printStream.println("Game Is A Draw");
+        printStream.println("Game Is Over");
 
     }
 }

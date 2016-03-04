@@ -4,7 +4,6 @@
     <list default="true" id="8ad85ad9-8e6c-4027-bb58-61a8a5b5e389" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/tictactoe/Board.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/tictactoe/Board.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/tictactoe/Game.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/tictactoe/Game.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/tictactoe/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/tictactoe/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/thoughtworks/tictactoe/BoardTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/tictactoe/BoardTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/thoughtworks/tictactoe/GameTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/tictactoe/GameTest.java" />
     </list>
@@ -72,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/tictactoe/Game.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+              <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -82,7 +81,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/tictactoe/GameTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+              <caret line="60" column="52" selection-start-line="60" selection-start-column="52" selection-end-line="60" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Board.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/tictactoe/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5443038">
+              <caret line="75" column="35" selection-start-line="75" selection-start-column="35" selection-end-line="75" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,15 +101,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BoardTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BoardTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/tictactoe/BoardTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.65822786">
-              <caret line="95" column="5" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="123" column="4" selection-start-line="123" selection-start-column="4" selection-end-line="123" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1107#1108#0" expanded="true" />
-                <element signature="e#1150#1151#0" expanded="true" />
+                <element signature="e#1139#1140#0" expanded="true" />
+                <element signature="e#1182#1183#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -548,8 +547,86 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration default="false" name="GameTest.shouldPrintGameOverWhenBoardIsFull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BoardTest">
+    <configuration default="false" name="BoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.thoughtworks.tictactoe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="tictactoe" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.thoughtworks.tictactoe" />
+      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.tictactoe.BoardTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="BoardTest.shouldEndGameWhenPlayerFillsAColumn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.thoughtworks.tictactoe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="tictactoe" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.thoughtworks.tictactoe" />
+      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.tictactoe.BoardTest" />
+      <option name="METHOD_NAME" value="shouldEndGameWhenPlayerFillsAColumn" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="BoardTest.shouldPrintDrawWhenBoardIsFull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.thoughtworks.tictactoe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="tictactoe" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.thoughtworks.tictactoe" />
+      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.tictactoe.BoardTest" />
+      <option name="METHOD_NAME" value="shouldPrintDrawWhenBoardIsFull" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="GameTest.shouldEndGameWhenBoardIsComplete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.thoughtworks.tictactoe.*" />
@@ -561,7 +638,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.thoughtworks.tictactoe" />
       <option name="MAIN_CLASS_NAME" value="com.thoughtworks.tictactoe.GameTest" />
-      <option name="METHOD_NAME" value="shouldPrintGameOverWhenBoardIsFull" />
+      <option name="METHOD_NAME" value="shouldEndGameWhenBoardIsComplete" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -593,84 +670,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="tictactoe" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="GameTest.shouldPromptBothPlayersDuringRun" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.thoughtworks.tictactoe.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="tictactoe" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.thoughtworks.tictactoe" />
-      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.tictactoe.GameTest" />
-      <option name="METHOD_NAME" value="shouldPromptBothPlayersDuringRun" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="BoardTest.shouldEvaluateToTrueWhenColumnContainsSamePlayers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.thoughtworks.tictactoe.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="tictactoe" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.thoughtworks.tictactoe" />
-      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.tictactoe.BoardTest" />
-      <option name="METHOD_NAME" value="shouldEvaluateToTrueWhenColumnContainsSamePlayers" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="BoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.thoughtworks.tictactoe.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="tictactoe" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.thoughtworks.tictactoe" />
-      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.tictactoe.BoardTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -1096,19 +1095,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.GameTest.shouldPrintGameOverWhenBoardIsFull" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.GameTest.shouldPromptBothPlayersDuringRun" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.BoardTest.shouldEvaluateToTrueWhenColumnContainsSamePlayers" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.BoardTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.BoardTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.BoardTest.shouldEndGameWhenPlayerFillsAColumn" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.BoardTest.shouldPrintDrawWhenBoardIsFull" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.GameTest.shouldEndGameWhenBoardIsComplete" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BoardTest.shouldEvaluateToTrueWhenColumnContainsSamePlayers" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.BoardTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.GameTest.shouldPromptBothPlayersDuringRun" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.GameTest.shouldPrintGameOverWhenBoardIsFull" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BoardTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.GameTest.shouldEndGameWhenBoardIsComplete" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.BoardTest.shouldEndGameWhenPlayerFillsAColumn" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.BoardTest.shouldPrintDrawWhenBoardIsFull" />
       </list>
     </recent_temporary>
   </component>
@@ -1123,44 +1122,44 @@
       <option name="number" value="Default" />
       <updated>1457035220198</updated>
       <workItem from="1457035224456" duration="6847000" />
-      <workItem from="1457042328284" duration="6189000" />
+      <workItem from="1457042328284" duration="8668000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BoardTest - 2016.03.03 at 17h 28m 55s.xml">
+    <history-entry file="BoardTest - 2016.03.03 at 17h 53m 01s.xml">
       <configuration name="BoardTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardTest - 2016.03.03 at 17h 35m 53s.xml">
+    <history-entry file="BoardTest - 2016.03.03 at 18h 16m 40s.xml">
       <configuration name="BoardTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardTest - 2016.03.03 at 17h 39m 21s.xml">
+    <history-entry file="BoardTest - 2016.03.03 at 18h 22m 55s.xml">
       <configuration name="BoardTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardTest_shouldEvaluateToTrueWhenColumnContainsSamePlayers - 2016.03.03 at 17h 23m 48s.xml">
-      <configuration name="BoardTest.shouldEvaluateToTrueWhenColumnContainsSamePlayers" configurationId="JUnit" />
+    <history-entry file="BoardTest - 2016.03.03 at 18h 23m 44s.xml">
+      <configuration name="BoardTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardTest_shouldEvaluateToTrueWhenColumnContainsSamePlayers - 2016.03.03 at 17h 36m 26s.xml">
-      <configuration name="BoardTest.shouldEvaluateToTrueWhenColumnContainsSamePlayers" configurationId="JUnit" />
+    <history-entry file="BoardTest_shouldEndGameWhenPlayerFillsAColumn - 2016.03.03 at 17h 50m 35s.xml">
+      <configuration name="BoardTest.shouldEndGameWhenPlayerFillsAColumn" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardTest_shouldEvaluateToTrueWhenColumnContainsSamePlayers - 2016.03.03 at 17h 36m 51s.xml">
-      <configuration name="BoardTest.shouldEvaluateToTrueWhenColumnContainsSamePlayers" configurationId="JUnit" />
+    <history-entry file="BoardTest_shouldEndGameWhenPlayerFillsAColumn - 2016.03.03 at 17h 51m 37s.xml">
+      <configuration name="BoardTest.shouldEndGameWhenPlayerFillsAColumn" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardTest_shouldEvaluateToTrueWhenColumnContainsSamePlayers - 2016.03.03 at 17h 38m 01s.xml">
-      <configuration name="BoardTest.shouldEvaluateToTrueWhenColumnContainsSamePlayers" configurationId="JUnit" />
+    <history-entry file="BoardTest_shouldEndGameWhenPlayerFillsAColumn - 2016.03.03 at 18h 09m 52s.xml">
+      <configuration name="BoardTest.shouldEndGameWhenPlayerFillsAColumn" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardTest_shouldEvaluateToTrueWhenColumnContainsSamePlayers - 2016.03.03 at 17h 40m 15s.xml">
-      <configuration name="BoardTest.shouldEvaluateToTrueWhenColumnContainsSamePlayers" configurationId="JUnit" />
+    <history-entry file="BoardTest_shouldPrintDrawWhenBoardIsFull - 2016.03.03 at 18h 08m 34s.xml">
+      <configuration name="BoardTest.shouldPrintDrawWhenBoardIsFull" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardTest_shouldEvaluateToTrueWhenColumnContainsSamePlayers - 2016.03.03 at 17h 40m 44s.xml">
-      <configuration name="BoardTest.shouldEvaluateToTrueWhenColumnContainsSamePlayers" configurationId="JUnit" />
+    <history-entry file="GameTest_shouldEndGameWhenBoardIsComplete - 2016.03.03 at 18h 13m 34s.xml">
+      <configuration name="GameTest.shouldEndGameWhenBoardIsComplete" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardTest_shouldEvaluateToTrueWhenColumnContainsSamePlayers - 2016.03.03 at 17h 41m 33s.xml">
-      <configuration name="BoardTest.shouldEvaluateToTrueWhenColumnContainsSamePlayers" configurationId="JUnit" />
+    <history-entry file="GameTest_shouldEndGameWhenBoardIsComplete - 2016.03.03 at 18h 15m 26s.xml">
+      <configuration name="GameTest.shouldEndGameWhenBoardIsComplete" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13036000" />
+    <option name="totallyTimeSpent" value="15515000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1182,7 +1181,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.50572956" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4" sideWeight="0.4973262" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4" sideWeight="0.4973262" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26661575" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1217,13 +1216,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/thoughtworks/tictactoe/Board.java</url>
-          <line>43</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/thoughtworks/tictactoe/Board.java</url>
-          <line>57</line>
+          <line>61</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
@@ -1284,8 +1277,8 @@
           <caret line="60" column="87" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="87" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1107#1108#0" expanded="true" />
-            <element signature="e#1150#1151#0" expanded="true" />
+            <element signature="e#1139#1140#0" expanded="true" />
+            <element signature="e#1182#1183#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1367,42 +1360,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/tictactoe/GameTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="60" column="52" selection-start-line="60" selection-start-column="52" selection-end-line="60" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/tictactoe/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/tictactoe/GameTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/tictactoe/BoardTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <caret line="123" column="4" selection-start-line="123" selection-start-column="4" selection-end-line="123" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1139#1140#0" expanded="true" />
+            <element signature="e#1182#1183#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/tictactoe/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5443038">
+          <caret line="75" column="35" selection-start-line="75" selection-start-column="35" selection-end-line="75" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/tictactoe/BoardTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65822786">
-          <caret line="95" column="5" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1107#1108#0" expanded="true" />
-            <element signature="e#1150#1151#0" expanded="true" />
           </folding>
         </state>
       </provider>

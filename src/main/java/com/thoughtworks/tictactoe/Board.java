@@ -37,28 +37,45 @@ public class Board {
     }
 
 
-
     public boolean complete() {
+        checkForDraw();
+        checkColumns();
+        return gameOver;
+    }
+
+    public void checkForDraw(){
         boolean completeCells =  true;
         for(String cell : boardString){
             if(!(cell.equals("X") || cell.equals("O"))){
                 completeCells = false;
             }
-            else if(!checkColumns()){
-                completeCells = false;
-            }
         }
 
-        return completeCells;
+       if(completeCells){
+           printStream.println("Game Is A Draw");
+       }
+
     }
 
-    public boolean checkColumns(){
-        boolean completeColumn = false;
+    public void checkColumns(){
         for(int i=6;i<9;i++){
             if(boardString.get(i).equals(boardString.get(i-3)) && boardString.get(i).equals(boardString.get(i-6))){
-                completeColumn = true;
+                gameOver = true;
             }
         }
-        return completeColumn;
+    }
+
+    public void checkRows(){
+        for(int i=0;i<9;i+=3){
+            if(boardString.get(i).equals(boardString.get(i+1)) && boardString.get(i).equals(boardString.get(i+2))){
+                gameOver = true;
+            }
+        }
+    }
+
+    public void checkGameStatus() {
+        if (gameOver) {
+            printStream.println("Game Over");
+        }
     }
 }
