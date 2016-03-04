@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8ad85ad9-8e6c-4027-bb58-61a8a5b5e389" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/tictactoe/Board.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/tictactoe/Board.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/tictactoe/Game.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/tictactoe/Game.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/thoughtworks/tictactoe/BoardTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/tictactoe/BoardTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/thoughtworks/tictactoe/GameTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/tictactoe/GameTest.java" />
     </list>
     <ignored path="tictactoe.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Board.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/tictactoe/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5443038">
-              <caret line="75" column="35" selection-start-line="75" selection-start-column="35" selection-end-line="75" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,15 +99,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BoardTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BoardTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/tictactoe/BoardTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="123" column="4" selection-start-line="123" selection-start-column="4" selection-end-line="123" selection-end-column="4" />
+            <state vertical-scroll-proportion="-2.265823">
+              <caret line="58" column="95" selection-start-line="58" selection-start-column="95" selection-end-line="58" selection-end-column="95" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1139#1140#0" expanded="true" />
-                <element signature="e#1182#1183#0" expanded="true" />
+                <element signature="e#1176#1177#0" expanded="true" />
+                <element signature="e#1219#1220#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1122,7 +1120,7 @@
       <option name="number" value="Default" />
       <updated>1457035220198</updated>
       <workItem from="1457035224456" duration="6847000" />
-      <workItem from="1457042328284" duration="8668000" />
+      <workItem from="1457042328284" duration="9386000" />
     </task>
     <servers />
   </component>
@@ -1139,11 +1137,11 @@
     <history-entry file="BoardTest - 2016.03.03 at 18h 23m 44s.xml">
       <configuration name="BoardTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardTest_shouldEndGameWhenPlayerFillsAColumn - 2016.03.03 at 17h 50m 35s.xml">
-      <configuration name="BoardTest.shouldEndGameWhenPlayerFillsAColumn" configurationId="JUnit" />
+    <history-entry file="BoardTest - 2016.03.03 at 18h 26m 44s.xml">
+      <configuration name="BoardTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardTest_shouldEndGameWhenPlayerFillsAColumn - 2016.03.03 at 17h 51m 37s.xml">
-      <configuration name="BoardTest.shouldEndGameWhenPlayerFillsAColumn" configurationId="JUnit" />
+    <history-entry file="BoardTest - 2016.03.03 at 18h 34m 32s.xml">
+      <configuration name="BoardTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="BoardTest_shouldEndGameWhenPlayerFillsAColumn - 2016.03.03 at 18h 09m 52s.xml">
       <configuration name="BoardTest.shouldEndGameWhenPlayerFillsAColumn" configurationId="JUnit" />
@@ -1159,7 +1157,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15515000" />
+    <option name="totallyTimeSpent" value="16233000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1277,8 +1275,8 @@
           <caret line="60" column="87" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="87" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1139#1140#0" expanded="true" />
-            <element signature="e#1182#1183#0" expanded="true" />
+            <element signature="e#1176#1177#0" expanded="true" />
+            <element signature="e#1219#1220#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1378,24 +1376,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/tictactoe/BoardTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/tictactoe/Board.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="123" column="4" selection-start-line="123" selection-start-column="4" selection-end-line="123" selection-end-column="4" />
+          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1139#1140#0" expanded="true" />
-            <element signature="e#1182#1183#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/tictactoe/Board.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/tictactoe/BoardTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5443038">
-          <caret line="75" column="35" selection-start-line="75" selection-start-column="35" selection-end-line="75" selection-end-column="35" />
+        <state vertical-scroll-proportion="-2.265823">
+          <caret line="58" column="95" selection-start-line="58" selection-start-column="95" selection-end-line="58" selection-end-column="95" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1176#1177#0" expanded="true" />
+            <element signature="e#1219#1220#0" expanded="true" />
           </folding>
         </state>
       </provider>

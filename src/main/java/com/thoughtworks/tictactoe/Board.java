@@ -73,6 +73,17 @@ public class Board {
         }
     }
 
+    public void checkDiagonals(){
+        for(int i=0;i<3;i+=2){
+            if(boardString.get(i).equals(boardString.get(i+2)) && boardString.get(i).equals(boardString.get(i+4))){
+                gameOver = true;
+            }
+            else if(boardString.get(i).equals(boardString.get(i+4)) && boardString.get(i).equals(boardString.get(i+8))){
+                gameOver = true;
+            }
+        }
+    }
+
     public void checkGameStatus() {
         if (gameOver) {
             printStream.println("Game Over");

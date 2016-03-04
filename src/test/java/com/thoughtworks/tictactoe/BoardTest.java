@@ -22,6 +22,7 @@ public class BoardTest {
     private Board fullBoard;
     private Board fullColumnBoard;
     private Board fullRowBoard;
+    private Board fullDiagonalBoard;
 
     @Before
     public void setup(){
@@ -50,11 +51,14 @@ public class BoardTest {
     }
 
     public void fullRowBoard() {
-        List<String> fullColumnString = new ArrayList<>(Arrays.asList("X","X","X","4","O","O","7","8","9"));
-        fullRowBoard = new Board(printStream, fullColumnString);
+        List<String> fullRowString = new ArrayList<>(Arrays.asList("X","X","X","4","O","O","7","8","9"));
+        fullRowBoard = new Board(printStream, fullRowString);
     }
 
-
+    private void fullDiagonalBoard() {
+        List<String> fullDiagonalString = new ArrayList<>(Arrays.asList("O","X","3","X","5","X","7","O","9"));
+        fullDiagonalBoard = new Board(printStream, fullDiagonalString);
+    }
 
     @Test
     public void shouldPrintEmptyBoardWhenGameStarts(){
@@ -119,6 +123,15 @@ public class BoardTest {
         fullRowBoard.checkRows();
         fullRowBoard.checkGameStatus();
 
+        verify(printStream).println(contains("Game Over"));
+    }
+    
+    @Test
+    public void shouldEndGameWhenPlayerFillsDiagonal(){
+        fullDiagonalBoard();
+        fullDiagonalBoard.checkDiagonals();
+        fullDiagonalBoard.checkGameStatus();
+        
         verify(printStream).println(contains("Game Over"));
     }
     
