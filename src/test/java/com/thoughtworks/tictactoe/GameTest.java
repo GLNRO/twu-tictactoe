@@ -18,13 +18,15 @@ public class GameTest {
     private PrintStream printStream;
     private Board board;
     private UserScanner scanner;
+    private Player player1;
 
     @Before
     public void setup(){
         printStream = mock(PrintStream.class);
         board = mock(Board.class);
         scanner = mock(UserScanner.class);
-        game = new Game(printStream,board,scanner);
+        player1 = mock(Player.class);
+        game = new Game(printStream,board, player1, scanner);
     }
 
     @Test
@@ -60,29 +62,14 @@ public class GameTest {
 
         verify(printStream).println("Game Is Over");
     }
-//
-//    @Test
-//    public void shouldPrintGameOverWhenBoardIsFull(){
-//        when(board.complete()).thenReturn(true);
-//
-//        game.isOver();
-//
-//        verify(printStream).println(contains("Game Is A Draw"));
-//    }
 
-//    @Test
-//    public void shouldPrintGameOverWhenBoardIsFull(){
-//        board.
-//
-//        verify(printStream).println(contains("Game Is A Draw"));
-//    }
+    @Test
+    public void shouldPromptPlayer1ToMoveWhenRun(){
+        when(board.complete()).thenReturn(false,true);
 
-//    @Test
-//    public void shouldPromptBothPlayersDuringRunUntilBoardIsFull(){
-//        when(board.complete()).thenReturn(true).thenReturn(false);
-//        game.run();
-//
-//        verify()
-//    }
+        game.run();
+
+        verify(player1).move();
+    }
 
 }

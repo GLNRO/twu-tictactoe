@@ -12,7 +12,8 @@ public class Main {
         List<String> boardString = new ArrayList<>(Arrays.asList("1","2","3","4","5","6","7","8","9"));
         Board board = new Board(printStream,boardString);
         UserScanner scanner = new UserScanner();
-        Game game = new Game(printStream,board,scanner);
+        Player player1 = new Player();
+        Game game = new Game(printStream,board,player1,scanner);
         game.start();
         game.run();
 

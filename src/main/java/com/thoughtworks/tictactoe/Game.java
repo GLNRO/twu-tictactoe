@@ -8,11 +8,13 @@ public class Game {
     private final Board board;
     private final UserScanner scanner;
     private PrintStream printStream;
+    private Player player1;
 
-    public Game(PrintStream printStream, Board board, UserScanner scanner) {
+    public Game(PrintStream printStream, Board board, Player player1,  UserScanner scanner) {
         this.printStream = printStream;
         this.board = board;
         this.scanner = scanner;
+        this.player1 = player1;
     }
 
     public void start() {
@@ -34,6 +36,7 @@ public class Game {
         while(!board.complete()){
             promptPlayer1();
             promptPlayer2();
+            player1.move();
         }
         isOver();
     }

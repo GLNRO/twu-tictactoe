@@ -52,6 +52,7 @@ public class Board {
         }
 
        if(completeCells){
+           gameOver = true;
            printStream.println("Game Is A Draw");
        }
 
