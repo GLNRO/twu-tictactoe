@@ -2,11 +2,11 @@ package com.thoughtworks.tictactoe;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.experimental.theories.suppliers.TestedOn;
 
+import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.PrintStream;
 
-import static org.mockito.Matchers.contains;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -18,15 +18,15 @@ public class GameTest {
     private PrintStream printStream;
     private Board board;
     private UserScanner scanner;
-    private Player player1;
+    private BufferedReader reader;
 
     @Before
     public void setup(){
         printStream = mock(PrintStream.class);
         board = mock(Board.class);
         scanner = mock(UserScanner.class);
-        player1 = mock(Player.class);
-        game = new Game(printStream,board, player1, scanner);
+        reader = mock(BufferedReader.class);
+        game = new Game(printStream,board, scanner, reader);
     }
 
     @Test
@@ -36,26 +36,27 @@ public class GameTest {
         verify(board).print();
     }
 
-    @Test
-    public void shouldAskPlayerOneToEnterAMove(){
-        when(scanner.nextInt()).thenReturn(1);
 
-        game.promptPlayer1();
+    @Test
+    public void shouldAskPlayerOneToEnterAMove() throws IOException{
+        when(reader.readLine()).thenReturn("1");
+
+        game.promptPlayer("X");
 
         verify(board).interpretInput(1,"X");
     }
 
     @Test
-    public void shouldAskPlayerTwoToEnterAMove(){
-        when(scanner.nextInt()).thenReturn(3);
+    public void shouldAskPlayerTwoToEnterAMove() throws IOException {
+        when(reader.readLine()).thenReturn("3");
 
-        game.promptPlayer2();
+        game.promptPlayer("O");
 
         verify(board).interpretInput(3,"O");
     }
 
     @Test
-    public void shouldEndGameWhenBoardIsComplete(){
+    public void shouldEndGameWhenBoardIsComplete() throws IOException {
         when(board.complete()).thenReturn(true);
 
         game.run();
@@ -63,13 +64,5 @@ public class GameTest {
         verify(printStream).println("Game Is Over");
     }
 
-    @Test
-    public void shouldPromptPlayer1ToMoveWhenRun(){
-        when(board.complete()).thenReturn(false,true);
-
-        game.run();
-
-        verify(player1).move();
-    }
 
 }

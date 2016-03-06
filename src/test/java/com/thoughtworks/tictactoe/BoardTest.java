@@ -126,14 +126,14 @@ public class BoardTest {
         verify(printStream).println(contains("Game Over"));
     }
     
-    @Test
-    public void shouldEndGameWhenPlayerFillsDiagonal(){
-        fullDiagonalBoard();
-        fullDiagonalBoard.checkDiagonals();
-        fullDiagonalBoard.checkGameStatus();
-        
-        verify(printStream).println(contains("Game Over"));
-    }
+//    @Test
+//    public void shouldEndGameWhenPlayerFillsDiagonal(){
+//        fullDiagonalBoard();
+//        fullDiagonalBoard.checkDiagonals();
+//        fullDiagonalBoard.checkGameStatus();
+//
+//        verify(printStream).println(contains("Game Over"));
+//    }
     
 
 }

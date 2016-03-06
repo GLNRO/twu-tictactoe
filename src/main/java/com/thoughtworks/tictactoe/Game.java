@@ -1,20 +1,23 @@
 package com.thoughtworks.tictactoe;
 
 
+import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.PrintStream;
 
 public class Game {
 
-    private final Board board;
-    private final UserScanner scanner;
+    private Board board;
+    private UserScanner scanner;
+    private BufferedReader reader;
     private PrintStream printStream;
     private Player player1;
 
-    public Game(PrintStream printStream, Board board, Player player1,  UserScanner scanner) {
+    public Game(PrintStream printStream, Board board, UserScanner scanner, BufferedReader reader) {
         this.printStream = printStream;
         this.board = board;
         this.scanner = scanner;
-        this.player1 = player1;
+        this.reader = reader;
     }
 
     public void start() {
@@ -22,25 +25,19 @@ public class Game {
     }
 
 
-    public void promptPlayer1() {
-        int playerMove = scanner.nextInt();
-        board.interpretInput(playerMove,"X");
+    public void promptPlayer(String playerMark) throws IOException {
+        String playerMove = reader.readLine();
+        board.interpretInput(Integer.valueOf(playerMove),playerMark);
+
     }
 
-    public void promptPlayer2() {
-        int playerMove = scanner.nextInt();
-        board.interpretInput(playerMove,"O");
-    }
-
-    public void run(){
-        while(!board.complete()){
-            promptPlayer1();
-            promptPlayer2();
-            player1.move();
+    public void run() throws IOException {
+        while (!board.complete()) {
+            promptPlayer("X");
+            promptPlayer("O");
         }
         isOver();
     }
-
 
     public void isOver() {
         printStream.println("Game Is Over");
